@@ -1,1 +1,1 @@
-# erdos-quant-finance-summer-2025
+# Quantitative Finance Projects at Erdos Institute, Summer 2025 
