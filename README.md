@@ -239,6 +239,7 @@ P = \text{premium}-e^{-rT}C_T + \sum_{i=i}^n e^{-rt_i}\{S_{t_i} - e^{r(t_i-t_{i-
 $$
 
 with 
+
 $$
 \Delta_{t_{i}} = \frac{\partial C}{\partial S}\bigg|_{t=t_{i}}
 $$
@@ -249,6 +250,7 @@ $$
 \Delta_{C_0}\approx \frac{C_0(S_0+\varepsilon) - C_0(S_0-\varepsilon)}{2\varepsilon}
 $$
 
+### Call option on stock with volatility drawn from the custom distribution
 Below we show the result of the 1000 MC simulation of the value of call option as we increase the number of hedges
 
 <img width="1309" alt="image" src="https://github.com/user-attachments/assets/9044b5e3-d208-4e71-9529-550cf6ab899c" />
@@ -269,7 +271,7 @@ P&L distribution with 252-fold $\Delta$ hedging (in 1 year) is
 
 <img width="789" alt="image" src="https://github.com/user-attachments/assets/e6f6ca0f-1778-43d3-b752-1731ada81962" />
 
-### GARCH(1,1) 
+### Call option on stock with volatility following GARCH(1,1) dynamics
 
 We repeated this analysis for the option on the stock following GARCH(1,1) dynamics. The model parameters were
 
