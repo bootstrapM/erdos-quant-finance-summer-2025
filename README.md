@@ -269,6 +269,8 @@ P&L distribution with 252-fold $\Delta$ hedging (in 1 year) is
 
 <img width="789" alt="image" src="https://github.com/user-attachments/assets/e6f6ca0f-1778-43d3-b752-1731ada81962" />
 
+### GARCH(1,1) 
+
 We repeated this analysis for the option on the stock following GARCH(1,1) dynamics. The model parameters were
 
 ```
@@ -276,7 +278,7 @@ We repeated this analysis for the option on the stock following GARCH(1,1) dynam
   S_0 = 100, K=100, T=1, r=0.05, mu=0
 ```
 
-The MC result with 10,000 simulations without $\Delta$ hedging: $5.16 ± $0.0395. This is close to the Black-Scholes value of $5.07 with volatility = average GARCH volatility 0.04 (for the chosen GARCH parameters). With $\delta$ hedging we get the following results. 
+The MC result with 10,000 simulations without $\Delta$ hedging: 5.16 $\pm$ 0.0395. This is close to the Black-Scholes value of 5.07 with volatility = average GARCH volatility 0.04 (for the chosen GARCH parameters). With $\delta$ hedging we get the following results. 
 
 <img width="1435" alt="image" src="https://github.com/user-attachments/assets/86f4cb2d-49c0-49af-a81a-9f9762405a05" />
 
