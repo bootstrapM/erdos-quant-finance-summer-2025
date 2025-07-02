@@ -1,5 +1,22 @@
 # Quantitative Finance Projects at Erdos Institute, Summer 2025 
 
+## Overview
+
+This submission features four rigorous quantitative finance projects that applied mathematical and computational tools to address problems in financial modeling and risk management. The first project focused on constructing high- and low-risk portfolios across diversified and tech-heavy stock baskets using quadratic optimization. Results demonstrated strong in-sample performance (Sharpe ratio up to 2.42), with expected degradation during backtesting—highlighting the importance of robust validation. The second project investigated the assumption of normality in the log returns of financial data. Through rolling Shapiro-Wilk p-value tests on log returns (2015–2025), transient periods of normality were found. We demonstrated how these periods can be exploited to build portfolios with some statistical evidence of normality. The third project analyzed the sensitivity of Black-Scholes price of option on time to expiration and spot price. Finally, the fourth project simulated delta hedging in stochastic volatility environments (via a custom and GARCH(1,1) models), showing that while hedging reduces variance and tail risk, it cannot eliminate risk exposure entirely unlike the idealized Black-Scholes setting.
+
+## Repository Structure
+
+erdos-quant-finance-summer-2025/
+├── README.md
+├── portfolio_analysis_functions.py
+├── Function-Mini-Project-4.py
+├── Project 1-Portfolio-Analysis-Final.ipynb
+├── Project 2-Final.ipynb
+├── Project 3-Final.ipynb
+└── Project-4-Final.ipynb
+
+
+
 ## Summary of Project 1 (Portfolio Construction)
 
 In this mini project we created various portfolios with low an high risk using stock data. Last 3.5 years of data was used to create (first three years) and backtest (last six months) the portfolios. We considered two universes / basket of stocks. The first basket is diversified by sector (Tech, Finance, Healthcare, Energy, Consumer Staples). The considered stocks were
@@ -304,7 +321,11 @@ P&L distribution with 252-fold $\Delta$ hedging (in 1 year) is
 
 We observe that the losses are significantly reduced with $\Delta$ hedging 
 
+## Some questions for the future
 
+- Implement Delta + Sigma + Gamma hedging in stochastic volatility models like GARCH(1,1) or Heston where delta hedging is not enough to eliminate risk completely. 
+- In practice delta or delta-vega hedging are inadequate due to real-world complexities (for instance transaction costs involved in the hedging procedure, stochastic volatility or jumps in the assest price). Deep hedging makes use of deep learning methods to construct optimal hedging strategies in financial markets, especially to deal with such complexities.
+- Explore the use of reinforcement learning for portfolio optimization and option pricing.
 
 
 
