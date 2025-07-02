@@ -6,6 +6,7 @@ This submission features four rigorous quantitative finance projects that applie
 
 ## Repository Structure
 
+```
 erdos-quant-finance-summer-2025/
 ├── README.md
 ├── portfolio_analysis_functions.py
@@ -14,7 +15,9 @@ erdos-quant-finance-summer-2025/
 ├── Project 2-Final.ipynb
 ├── Project 3-Final.ipynb
 └── Project-4-Final.ipynb
+```
 
+The four projects are in the four notebooks `Project 1-Portfolio-Analysis-Final.ipynb` , `Project 2-Final.ipynb`, `Project 3-Final.ipynb`and `Project-4-Final.ipynb`. These notebooks have dependencies on various custom functions that are written in python files `portfolio_analysis_functions.py` and `Function-Mini-Project-4.py`. 
 
 
 ## Summary of Project 1 (Portfolio Construction)
