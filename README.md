@@ -2,7 +2,7 @@
 
 ## Overview
 
-This submission features four rigorous quantitative finance projects that applied mathematical and computational tools to address problems in financial modeling and risk management. The first project focused on constructing high- and low-risk portfolios across diversified and tech-heavy stock baskets using quadratic optimization. Results demonstrated strong in-sample performance (Sharpe ratio up to 2.42), with expected degradation during backtesting—highlighting the importance of robust validation. The second project investigated the assumption of normality in the log returns of financial data. Through rolling Shapiro-Wilk p-value tests on log returns (2015–2025), transient periods of normality were found. We demonstrated how these periods can be exploited to build portfolios with some statistical evidence of normality. The third project analyzed the sensitivity of Black-Scholes price of option on time to expiration and spot price. Finally, the fourth project simulated delta hedging in stochastic volatility environments (via a custom and GARCH(1,1) models), showing that while hedging reduces variance and tail risk, it cannot eliminate risk exposure entirely unlike the idealized Black-Scholes setting.
+This submission features four rigorous quantitative finance projects that applied mathematical and computational tools to address problems in financial modeling and risk management. The first project focused on constructing high- and low-risk portfolios across diversified and tech-heavy stock baskets using quadratic optimization. Results demonstrated strong in-sample performance (Sharpe ratio up to 2.42), with expected degradation during backtesting—highlighting the importance of robust validation. The second project investigated the assumption of normality in the log returns of financial data. Through rolling Shapiro-Wilk p-value tests on log returns (2015–2025), transient periods of normality were found. We demonstrated how these periods can be exploited to build portfolios with some statistical evidence of normality. The third project analyzed the sensitivity of Black-Scholes price of option on time to expiration and spot price. Finally, the fourth project simulated delta hedging in stochastic volatility environments (via a custom and GARCH(1,1) models), showing that while hedging reduces variance and tail risk, it cannot eliminate risk exposure entirely unlike the idealized Black-Scholes setting. The project also contains a C++ implementation of the Crank-Nicolson method for solving the Black Scholes PDE.
 
 ## Repository Structure
 
@@ -14,10 +14,11 @@ erdos-quant-finance-summer-2025/
 ├── Project 1-Portfolio-Analysis-Final.ipynb
 ├── Project 2-Final.ipynb
 ├── Project 3-Final.ipynb
-└── Project-4-Final.ipynb
+├── Project-4-Final.ipynb
+└── BS_PDE_Solver/
 ```
 
-The four projects are in the four notebooks `Project 1-Portfolio-Analysis-Final.ipynb` , `Project 2-Final.ipynb`, `Project 3-Final.ipynb`and `Project-4-Final.ipynb`. These notebooks have dependencies on various custom functions that are written in python files `portfolio_analysis_functions.py` and `Function-Mini-Project-4.py`. 
+The four projects are in the four notebooks `Project 1-Portfolio-Analysis-Final.ipynb` , `Project 2-Final.ipynb`, `Project 3-Final.ipynb`and `Project-4-Final.ipynb`. These notebooks have dependencies on various custom functions that are written in python files `portfolio_analysis_functions.py` and `Function-Mini-Project-4.py`. The folder `BS_PDE_Solver` contains C++ implementation of the Crank-Nicolson method for solving the Black Scholes PDE and relatedly the Heat equation. 
 
 
 ## Summary of Project 1 (Portfolio Construction)
